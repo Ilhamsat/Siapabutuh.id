@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JawabanPertanyaan2"
+    android:background="@drawable/pop_bg">
+
+    <Button
+        android:id="@+id/close"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="@drawable/ic_action_close"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:id="@+id/jawabanPertanyaan2"
+        android:layout_below="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Siapa yang menerima Donasi ?"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#78D613"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/list1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- Panti Asuhan"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:layout_below="@+id/jawabanPertanyaan2"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/list2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- Orang Pinggir Jalan"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:layout_below="@+id/list1"/>
+
+    <TextView
+        android:id="@+id/list3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- Orang Terkena Musibah"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:layout_below="@+id/list2"/>
+
+</RelativeLayout>

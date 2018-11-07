@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#F8F8F8">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/atasDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/backBuatPertanyaan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logoinvers"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/atasDashboard"
+        android:layout_marginTop="5dp">
+
+    </android.support.v4.view.ViewPager>
+
+    <RelativeLayout
+        android:id="@+id/donasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewPager"
+        android:background="@drawable/borderdash"
+        android:paddingBottom="20dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/textDonasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Donasi"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#343E45"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="24dp"/>
+
+        <ImageButton
+            android:id="@+id/buttonMakanan"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/textDonasi"
+            android:layout_marginLeft="38dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/makanan"
+            android:background="@drawable/buttondonasi"/>
+
+        <ImageButton
+            android:id="@+id/buttonUang"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/textDonasi"
+            android:layout_toRightOf="@+id/buttonMakanan"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/uang"
+            android:background="@drawable/buttondonasi"/>
+
+        <ImageButton
+            android:id="@+id/buttonBarang"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/textDonasi"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="38dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/barang"
+            android:background="@drawable/buttondonasi"/>
+
+        <TextView
+            android:id="@+id/textMakanan"
+            android:layout_below="@+id/buttonMakanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="45dp"
+            android:text="Makanan"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/textUang"
+            android:layout_below="@+id/buttonUang"
+            android:layout_toRightOf="@+id/textMakanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="85dp"
+            android:text="Uang"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/textBarang"
+            android:layout_below="@+id/buttonBarang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:text="Barang"
+            android:textSize="14dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/donasi"
+        android:background="@drawable/borderdash"
+        android:layout_marginTop="15dp"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:id="@+id/textInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Info"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#343E45"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="24dp"/>
+
+        <ImageButton
+            android:id="@+id/buttonFaq"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/textInfo"
+            android:layout_marginLeft="38dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/faq"
+            android:background="@drawable/buttoninfo"/>
+
+        <ImageButton
+            android:id="@+id/buttonBerita"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/textInfo"
+            android:layout_toRightOf="@+id/buttonFaq"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/berita"
+            android:background="@drawable/buttoninfo"/>
+
+        <ImageButton
+            android:id="@+id/buttonInfoo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/textInfo"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="38dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/info"
+            android:background="@drawable/buttoninfo"/>
+
+        <TextView
+            android:id="@+id/textFaq"
+            android:layout_below="@+id/buttonFaq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="60dp"
+            android:text="FAQ"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/textBerita"
+            android:layout_below="@+id/buttonBerita"
+            android:layout_toRightOf="@+id/textFaq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="100dp"
+            android:text="Berita"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/textInfoo"
+            android:layout_below="@+id/buttonInfoo"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="45dp"
+            android:text="Tentang"
+            android:textSize="14dp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

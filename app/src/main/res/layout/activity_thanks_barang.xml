@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThanksBarang">
+
+    <FrameLayout
+        android:id="@+id/atasDonasiBarang"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/backDonasiBarang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_back"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/textDonasiBarang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Donasi Barang"
+            android:textSize="24dp"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"/>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/tyBarang"
+        android:layout_below="@+id/atasDonasiBarang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ty"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"/>
+    <TextView
+        android:id="@+id/textTY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tyBarang"
+        android:text="TERIMA KASIH !"
+        android:textStyle="bold"
+        android:textSize="32dp"
+        android:textColor="#343E45"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/textTYBarang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTY"
+        android:text="Tim kami akan segera menghubungi Anda"
+        android:layout_centerHorizontal="true"
+        android:textSize="13dp"
+        android:textColor="#939393"/>
+
+</RelativeLayout>

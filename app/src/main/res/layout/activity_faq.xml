@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/atasFAQ"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/backFAQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_back"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/textFAQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FAQ"
+            android:textSize="24dp"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/pertanyaan1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/atasFAQ"
+        android:text="Apa itu Siapabutuh.id ?"
+        android:textSize="13dp"
+        android:textColor="#6D6D6D"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background_pertanyaan"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginRight="34dp"
+        android:paddingLeft="90dp"
+        android:paddingRight="90dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/pertanyaan2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pertanyaan1"
+        android:text="Siapa yang menerima donasi ?"
+        android:textSize="13dp"
+        android:textColor="#6D6D6D"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background_pertanyaan"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginRight="34dp"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/pertanyaan3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pertanyaan2"
+        android:text="Dimana lokasi kantor Siapabutuh.id ?"
+        android:textSize="13dp"
+        android:textColor="#6D6D6D"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background_pertanyaan"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginRight="34dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/pertanyaan4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pertanyaan3"
+        android:text="Siapa saja Tim Siapabutuh.id ?"
+        android:textSize="13dp"
+        android:textColor="#6D6D6D"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background_pertanyaan"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginRight="34dp"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/pertanyaan5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pertanyaan4"
+        android:text="Dapatkah saya menjadi relawan Siapabutuh.id ?"
+        android:textSize="13dp"
+        android:textColor="#6D6D6D"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background_pertanyaan"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginRight="34dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_horizontal"/>
+
+</RelativeLayout>

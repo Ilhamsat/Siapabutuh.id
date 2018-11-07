@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JawabanPertanyaan4"
+    android:background="@drawable/pop_bg">
+
+    <Button
+        android:id="@+id/close"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="@drawable/ic_action_close"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:id="@+id/jawabanPertanyaan4"
+        android:layout_below="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Siapa saja tim Siapabutuh.id ?"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#78D613"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Untuk saat ini,  tim Siapabutuh.id terdiri atas beberapa mahasiswa dari Universitas Gadjah Mada ."
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:layout_below="@+id/jawabanPertanyaan4"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

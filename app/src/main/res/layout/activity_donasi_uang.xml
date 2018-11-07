@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/atasDonasiUang"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/backDonasiUang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_back"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/textDonasiUang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Donasi Uang"
+            android:textSize="24dp"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"/>
+    </FrameLayout>
+
+    <ScrollView
+        android:id="@+id/scrollUang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/atasDonasiUang">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textNamaU"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="34dp"
+                android:textSize="18dp"/>
+
+            <EditText
+                android:id="@+id/isiNamaU"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/kolom"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="34dp"
+                android:layout_marginLeft="34dp"
+                android:textSize="18dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+            <TextView
+                android:id="@+id/textAlamatU"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alamat"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="34dp"
+                android:textSize="18dp"/>
+
+            <EditText
+                android:id="@+id/isiAlamatU"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/kolom"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="34dp"
+                android:layout_marginLeft="34dp"
+                android:textSize="18dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+            <TextView
+                android:id="@+id/textNoHPU"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No. HP"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="34dp"
+                android:textSize="18dp"/>
+
+            <EditText
+                android:id="@+id/isiNoHPU"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/kolom"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="34dp"
+                android:layout_marginLeft="34dp"
+                android:textSize="18dp"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+            <TextView
+                android:id="@+id/textEmailU"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="34dp"
+                android:textSize="18dp"/>
+
+            <EditText
+                android:id="@+id/isiEmailU"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/kolom"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="34dp"
+                android:layout_marginLeft="34dp"
+                android:textSize="18dp"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+            <TextView
+                android:id="@+id/textJumlahUang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jumlah Uang"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="34dp"
+                android:textSize="18dp"/>
+
+            <EditText
+                android:id="@+id/isiJumlahUang"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/kolom"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="34dp"
+                android:layout_marginLeft="34dp"
+                android:textSize="18dp"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+            <TextView
+                android:id="@+id/textRekening"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perkiraan Tanggal Kadaluarsa"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="34dp"
+                android:textSize="18dp"/>
+
+            <EditText
+                android:id="@+id/isiRekening"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/kolom"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="34dp"
+                android:layout_marginLeft="34dp"
+                android:textSize="18dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+            <TextView
+                android:id="@+id/textKeteranganU"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Keterangan Tambahan"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="34dp"
+                android:textSize="18dp"/>
+
+            <EditText
+                android:id="@+id/isiKeteranganU"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/kolom"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="34dp"
+                android:layout_marginLeft="34dp"
+                android:textSize="18dp"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+            <Button
+                android:id="@+id/buttonDonasiUang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Donasikan!"
+                android:background="@drawable/button_donasikan"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="48dp"
+                android:layout_marginBottom="80dp"
+                android:textColor="#FFFFFF"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

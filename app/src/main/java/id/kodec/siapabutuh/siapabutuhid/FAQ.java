@@ -1,6 +1,7 @@
 package id.kodec.siapabutuh.siapabutuhid;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -67,6 +68,18 @@ public class FAQ extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        TextView textFAQ = (TextView) findViewById(R.id.textFAQ);
+
+        Typeface allerBold =Typeface.createFromAsset(getAssets(),"font/Aller Bold.ttf");
+        Typeface allerRegular =Typeface.createFromAsset(getAssets(),"font/Aller_Rg.ttf");
+
+        textFAQ.setTypeface(allerBold);
+        pertanyaan1.setTypeface(allerRegular);
+        pertanyaan2.setTypeface(allerRegular);
+        pertanyaan3.setTypeface(allerRegular);
+        pertanyaan4.setTypeface(allerRegular);
+        pertanyaan5.setTypeface(allerRegular);
 
     }
 }

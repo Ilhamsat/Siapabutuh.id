@@ -29,6 +29,7 @@
         android:layout_marginTop="20dp"/>
 
     <TextView
+        android:id="@+id/descJawaban"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Siapabutuh.id adalah sebuah aplikasi yang melakukan pengumpulan dana atau barang maupun makanan yang akan didonasikan kepada yang membutuhkan."

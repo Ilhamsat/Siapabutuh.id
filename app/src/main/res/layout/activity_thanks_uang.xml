@@ -31,32 +31,41 @@
             android:textStyle="bold"/>
     </FrameLayout>
 
-    <ImageView
-        android:id="@+id/tyUang"
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
         android:layout_below="@+id/atasDonasiUang"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ty"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="110dp"/>
-    <TextView
-        android:id="@+id/textTY"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tyUang"
-        android:text="TERIMA KASIH !"
-        android:textStyle="bold"
-        android:textSize="32dp"
-        android:textColor="#343E45"
-        android:layout_centerHorizontal="true"/>
-    <TextView
-        android:id="@+id/textTYUang"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textTY"
-        android:text="Tim kami akan segera memverifikasi donasi Anda"
-        android:layout_centerHorizontal="true"
-        android:textSize="13dp"
-        android:textColor="#939393"/>
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/tyUang"
+            android:layout_below="@+id/atasDonasiUang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ty"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/textTY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tyUang"
+            android:text="TERIMA KASIH !"
+            android:textStyle="bold"
+            android:textSize="32dp"
+            android:textColor="#343E45"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/textTYUang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textTY"
+            android:text="Tim kami akan segera memverifikasi donasi Anda"
+            android:layout_centerHorizontal="true"
+            android:textSize="13dp"
+            android:textColor="#939393"/>
+
+    </RelativeLayout>
 
 </RelativeLayout>

@@ -31,6 +31,7 @@
         android:layout_marginRight="20dp"/>
 
     <TextView
+        android:id="@+id/descJawaban"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Untuk saat ini,  tim Siapabutuh.id terdiri atas beberapa mahasiswa dari Universitas Gadjah Mada ."

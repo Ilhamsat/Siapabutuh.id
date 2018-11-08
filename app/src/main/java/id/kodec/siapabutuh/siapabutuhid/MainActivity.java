@@ -1,6 +1,7 @@
 package id.kodec.siapabutuh.siapabutuhid;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,6 +34,26 @@ public class MainActivity extends AppCompatActivity {
 //        ViewPager viewPager = (ViewPager) findViewById(R.id.viewPager);
 //        ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(this);
 //        viewPager.setAdapter(viewPagerAdapter);
+
+        TextView textDonasi = (TextView) findViewById(R.id.textDonasi);
+        TextView textInfo = (TextView) findViewById(R.id.textInfo);
+        TextView textMakanan = (TextView) findViewById(R.id.textMakanan);
+        TextView textUang = (TextView) findViewById(R.id.textUang);
+        TextView textBarang = (TextView) findViewById(R.id.textBarang);
+        TextView textFAQ = (TextView) findViewById(R.id.textFaq);
+        TextView textBerita = (TextView) findViewById(R.id.textBerita);
+        TextView textInfoo = (TextView) findViewById(R.id.textInfoo);
+        Typeface allerBold =Typeface.createFromAsset(getAssets(),"font/Aller Bold.ttf");
+        Typeface allerRegular =Typeface.createFromAsset(getAssets(),"font/Aller_Rg.ttf");
+
+        textDonasi.setTypeface(allerBold);
+        textInfo.setTypeface(allerBold);
+        textMakanan.setTypeface(allerRegular);
+        textUang.setTypeface(allerRegular);
+        textBarang.setTypeface(allerRegular);
+        textFAQ.setTypeface(allerRegular);
+        textBerita.setTypeface(allerRegular);
+        textInfoo.setTypeface(allerRegular);
 
         ImageButton buttonMakanan = (ImageButton) findViewById(R.id.buttonMakanan);
         buttonMakanan.setOnClickListener(new View.OnClickListener() {

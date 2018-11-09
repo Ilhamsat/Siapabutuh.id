@@ -1,9 +1,11 @@
 package id.kodec.siapabutuh.siapabutuhid;
 
 import android.content.Context;
+import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.ImageView;
 import android.support.v7.widget.RecyclerView;
@@ -11,6 +13,7 @@ import android.support.v7.widget.RecyclerView;
 import java.util.List;
 
 public class InfoAdapter extends RecyclerView.Adapter<InfoAdapter.InfoViewHolder> {
+
 
     private Context mCtx;
     private List<Info> infoList;
@@ -24,6 +27,7 @@ public class InfoAdapter extends RecyclerView.Adapter<InfoAdapter.InfoViewHolder
     public InfoViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(mCtx);
         View view = inflater.inflate(R.layout.list_layout, null);
+
         return new InfoViewHolder(view);
     }
 
@@ -38,6 +42,8 @@ public class InfoAdapter extends RecyclerView.Adapter<InfoAdapter.InfoViewHolder
         holder.imageView.setImageDrawable(mCtx.getResources().getDrawable(info.getImage()));
     }
 
+
+
     @Override
     public int getItemCount() {
         return infoList.size();
@@ -46,12 +52,14 @@ public class InfoAdapter extends RecyclerView.Adapter<InfoAdapter.InfoViewHolder
     class InfoViewHolder extends RecyclerView.ViewHolder {
         TextView textViewTitle, textDate, selengkapnya;
         ImageView imageView;
+
         public InfoViewHolder(View itemView) {
             super(itemView);
             textViewTitle = itemView.findViewById(R.id.textViewTitle);
             textDate = itemView.findViewById(R.id.textDate);
             selengkapnya = itemView.findViewById(R.id.selengkapnya);
             imageView = itemView.findViewById(R.id.imageView);
+
         }
     }
 }

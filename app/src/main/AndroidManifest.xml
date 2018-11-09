@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="id.kodec.siapabutuh.siapabutuhid">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -38,11 +40,22 @@
         <activity android:name=".Tentang" />
         <activity android:name=".FAQ" />
         <activity android:name=".Berita" />
-        <activity android:name=".JawabanPertanyaan1" android:theme="@style/AppTheme.PopMe"/>
-        <activity android:name=".JawabanPertanyaan2" android:theme="@style/AppTheme.PopMe"/>
-        <activity android:name=".JawabanPertanyaan3" android:theme="@style/AppTheme.PopMe"/>
-        <activity android:name=".JawabanPertanyaan4" android:theme="@style/AppTheme.PopMe"/>
-        <activity android:name=".JawabanPertanyaan5" android:theme="@style/AppTheme.PopMe"></activity>
+        <activity
+            android:name=".JawabanPertanyaan1"
+            android:theme="@style/AppTheme.PopMe" />
+        <activity
+            android:name=".JawabanPertanyaan2"
+            android:theme="@style/AppTheme.PopMe" />
+        <activity
+            android:name=".JawabanPertanyaan3"
+            android:theme="@style/AppTheme.PopMe" />
+        <activity
+            android:name=".JawabanPertanyaan4"
+            android:theme="@style/AppTheme.PopMe" />
+        <activity
+            android:name=".JawabanPertanyaan5"
+            android:theme="@style/AppTheme.PopMe" />
+        <activity android:name=".Infoo"></activity>
     </application>
 
 </manifest>

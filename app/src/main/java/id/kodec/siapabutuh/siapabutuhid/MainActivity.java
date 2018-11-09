@@ -137,10 +137,10 @@ public class MainActivity extends AppCompatActivity {
     private void setupSlider() {
         sliderView.setDurationScroll(800);
         List<Fragment> fragments = new ArrayList<>();
-        fragments.add(FragmentSlider.newInstance("http://www.menucool.com/slider/prod/image-slider-1.jpg"));
-        fragments.add(FragmentSlider.newInstance("http://www.menucool.com/slider/prod/image-slider-2.jpg"));
-        fragments.add(FragmentSlider.newInstance("http://www.menucool.com/slider/prod/image-slider-3.jpg"));
-        fragments.add(FragmentSlider.newInstance("http://www.menucool.com/slider/prod/image-slider-4.jpg"));
+        fragments.add(FragmentSlider.newInstance("https://cdn.idntimes.com/content-images/post/20180929/6adcc29a4401836c6cc9f21ff362cf54_600x400.jpg"));
+        fragments.add(FragmentSlider.newInstance("http://debuterbang.com/wp-content/uploads/2013/12/pengemis_jakarta.jpg"));
+        fragments.add(FragmentSlider.newInstance("http://cdn2.tstatic.net/makassar/foto/bank/images/ilustrasi_20160323_214150.jpg"));
+        fragments.add(FragmentSlider.newInstance("https://statik.tempo.co/data/2018/09/28/id_736963/736963_720.jpg"));
 
         mAdapter = new SliderPagerAdapter(getSupportFragmentManager(), fragments);
         sliderView.setAdapter(mAdapter);
@@ -175,6 +175,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        pilih2M.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,Infoo.class);
+                startActivity(intent);
+            }
+        });
 
         epicDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.argb(89, 52, 62, 69)));
         epicDialog.show();
@@ -204,6 +211,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this,DonasiBarang.class);
+                startActivity(intent);
+            }
+        });
+        pilih2B.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,Infoo.class);
                 startActivity(intent);
             }
         });

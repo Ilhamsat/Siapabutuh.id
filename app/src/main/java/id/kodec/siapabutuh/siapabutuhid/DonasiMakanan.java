@@ -75,7 +75,5 @@ public class DonasiMakanan extends AppCompatActivity {
 
     }
 
-    public void kolomclick(View view) {
-        
-    }
+
 }

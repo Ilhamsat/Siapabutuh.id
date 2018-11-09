@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Infoo">
+
+    <FrameLayout
+        android:id="@+id/atasInfo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/backInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_back"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/textInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Info"
+            android:textSize="24dp"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"/>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/logoInfoo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/atasInfo"
+        android:src="@drawable/splash"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"/>
+    <RelativeLayout
+        android:id="@+id/isiInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logoInfoo"
+        android:background="@drawable/buttoninfo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/descInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Silahakan kirim makanan atau barang anda ke alamat berikut :"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:textColor="#343E45"/>
+        <TextView
+            android:id="@+id/alamat1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jalan Rambutan No. 56B Kutu Dukuh Mlati, Sleman, Yogyakarta"
+            android:layout_below="@+id/descInfo"
+            android:layout_marginLeft="50dp"
+            android:textSize="14dp"
+            android:textColor="#343E45"/>
+        <TextView
+            android:id="@+id/alamat2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jalan Bhayangkara RT12 Gg. Pongo3 Pangkalan Bun, Kalimantan Tengah"
+            android:layout_below="@+id/alamat1"
+            android:layout_marginLeft="50dp"
+            android:textSize="14dp"
+            android:textColor="#343E45"/>
+
+        <TextView
+            android:id="@+id/textKontak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:text="Kontak :"
+            android:layout_below="@+id/alamat2"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="25dp"
+            android:textColor="#343E45"/>
+        <TextView
+            android:id="@+id/kontak1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+6285692315002 (Yogyakarta)"
+            android:layout_below="@+id/textKontak"
+            android:layout_marginLeft="50dp"
+            android:textColor="#343E45"/>
+        <TextView
+            android:id="@+id/kontak2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+6281347591227 (Kalimantan Tengah)"
+            android:layout_below="@+id/kontak1"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="25dp"
+            android:textColor="#343E45"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

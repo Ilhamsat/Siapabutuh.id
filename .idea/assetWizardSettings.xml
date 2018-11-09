@@ -63,6 +63,7 @@
                                       <entry key="backgroundAssetType" value="COLOR" />
                                       <entry key="backgroundColor" value="ffffff" />
                                       <entry key="foregroundImage" value="C:\Users\Ilham Satriadi\Videos\logolauncher.png" />
+                                      <entry key="legacyIconShape" value="CIRCLE" />
                                     </map>
                                   </option>
                                 </PersistentState>

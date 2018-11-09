@@ -48,8 +48,8 @@
                 <ImageView
                     android:id="@+id/logoTentang"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/logosiapabutuh"
+                    android:layout_height="100dp"
+                    android:src="@drawable/splash"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="124dp"/>
                 <TextView
@@ -70,8 +70,8 @@
             <ImageView
                 android:id="@+id/loveTentang"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/love"
+                android:layout_height="210dp"
+                android:src="@drawable/orang2"
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="420dp"/>

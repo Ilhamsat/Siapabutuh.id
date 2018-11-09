@@ -1,13 +1,18 @@
 package id.kodec.siapabutuh.siapabutuhid;
 
+import android.app.Dialog;
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.Typeface;
+import android.graphics.drawable.ColorDrawable;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -25,6 +30,14 @@ public class MainActivity extends AppCompatActivity {
     private SliderIndicator mIndicator;
     private SliderView sliderView;
     private LinearLayout mLinearLayout;
+
+    Dialog epicDialog;
+    TextView pilih1M;
+    TextView pilih2M;
+    TextView pilih1B;
+    TextView pilih2B;
+    ImageView buttonClose;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,8 +72,7 @@ public class MainActivity extends AppCompatActivity {
         buttonMakanan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,DonasiMakanan.class);
-                startActivity(intent);
+                ShowPopupM();
             }
         });
 
@@ -77,8 +89,7 @@ public class MainActivity extends AppCompatActivity {
         buttonBarang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,DonasiBarang.class);
-                startActivity(intent);
+                ShowPopupB();
             }
         });
 
@@ -113,6 +124,14 @@ public class MainActivity extends AppCompatActivity {
         mLinearLayout = (LinearLayout) findViewById(R.id.pagesContainer);
         setupSlider();
 
+        epicDialog = new Dialog(this);
+        pilih1M = (TextView) findViewById(R.id.pilih1M);
+        pilih2M = (TextView) findViewById(R.id.pilih2M);
+        pilih1B = (TextView) findViewById(R.id.pilih1B);
+        pilih2B = (TextView) findViewById(R.id.pilih2B);
+
+
+
     }
 
     private void setupSlider() {
@@ -129,5 +148,70 @@ public class MainActivity extends AppCompatActivity {
         mIndicator.setPageCount(fragments.size());
         mIndicator.show();
     }
+
+    public void ShowPopupM(){
+        epicDialog.setContentView(R.layout.epic_popup);
+        buttonClose = (ImageView) epicDialog.findViewById(R.id.buttonClose);
+        pilih1M = (TextView) epicDialog.findViewById(R.id.pilih1M);
+        pilih2M = (TextView) epicDialog.findViewById(R.id.pilih2M);
+        CardView cardViewM = (CardView) epicDialog.findViewById(R.id.cardViewM);
+
+        Typeface allerBold =Typeface.createFromAsset(getAssets(),"font/Aller Bold.ttf");
+        pilih1M.setTypeface(allerBold);
+        pilih2M.setTypeface(allerBold);
+
+        cardViewM.setCardBackgroundColor(Color.argb(69, 255, 255, 255));
+        buttonClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                epicDialog.dismiss();
+            }
+        });
+
+        pilih1M.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,DonasiMakanan.class);
+                startActivity(intent);
+            }
+        });
+
+        epicDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.argb(89, 52, 62, 69)));
+        epicDialog.show();
+
+    }
+
+    public void ShowPopupB(){
+        epicDialog.setContentView(R.layout.epic_popup_barang);
+        buttonClose = (ImageView) epicDialog.findViewById(R.id.buttonClose);
+        pilih1B = (TextView) epicDialog.findViewById(R.id.pilih1B);
+        pilih2B = (TextView) epicDialog.findViewById(R.id.pilih2B);
+        CardView cardViewB = (CardView) epicDialog.findViewById(R.id.cardViewB);
+
+        Typeface allerBold =Typeface.createFromAsset(getAssets(),"font/Aller Bold.ttf");
+        pilih1B.setTypeface(allerBold);
+        pilih2B.setTypeface(allerBold);
+
+        cardViewB.setCardBackgroundColor(Color.argb(69, 255, 255, 255));
+        buttonClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                epicDialog.dismiss();
+            }
+        });
+
+        pilih1B.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,DonasiBarang.class);
+                startActivity(intent);
+            }
+        });
+
+        epicDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.argb(89, 52, 62, 69)));
+        epicDialog.show();
+
+    }
+
 
 }

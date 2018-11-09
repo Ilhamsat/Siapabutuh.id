@@ -57,7 +57,8 @@
                 android:layout_marginLeft="34dp"
                 android:textSize="18dp"
                 android:paddingLeft="10dp"
-                android:paddingRight="10dp"/>
+                android:paddingRight="10dp"
+                android:onClick="kolomclick"/>
 
             <TextView
                 android:id="@+id/textAlamatM"

@@ -71,5 +71,11 @@ public class DonasiMakanan extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+    }
+
+    public void kolomclick(View view) {
+        
     }
 }
